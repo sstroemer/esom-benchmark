@@ -140,8 +140,8 @@ process(
     {"model": "tutorial_national_scale", "period": "one full year"},
 )
 
-ret = subprocess.check_call(["pip", "uninstall", "gurobipy"])
-assert ret == 0, "Failed to install gurobipy"
+ret = subprocess.check_call(["pip", "uninstall", "-y", "gurobipy"])
+assert ret == 0, "Failed to uninstall gurobipy"
 
-ret = subprocess.check_call(["pip", "uninstall", "calliope"])
-assert ret == 0, "Failed to install calliope"
+ret = subprocess.check_call(["pip", "uninstall", "-y", "calliope"])
+assert ret == 0, "Failed to uninstall calliope"
