@@ -6,17 +6,6 @@ import re
 import json
 
 
-# dir_env = os.path.join(tempfile.gettempdir(), "esom-benchmark-calliope-0610")
-# dir_env_bin = os.path.join(dir_env, "bin")
-
-# ret = subprocess.check_call([sys.executable, "-m", "venv", dir_env])
-# assert ret == 0, "Failed to create virtual environment"
-
-# ret = subprocess.check_call(["bash", "-c", "source " + os.path.join(dir_env_bin, "activate")])
-# assert ret == 0, "Failed to activate virtual environment"
-
-# os.getenv("VIRTUAL_ENV") == dir_env, "Virtual environment not activated"
-
 ret = subprocess.check_call(["pip", "install", "gurobipy"])
 assert ret == 0, "Failed to install gurobipy"
 
